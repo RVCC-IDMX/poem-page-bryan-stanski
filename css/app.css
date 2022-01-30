@@ -1,3 +1,42 @@
 body {
+    align-content: center;
+    text-align: center;
     color: #000080;
+}
+
+#life-img {
+    width:200px;
+}
+
+/* Media Screen for above phone Sizes */
+
+@media screen and (min-width:768px) {
+
+    #life-img {
+        width:300px;
+    }
+
+    #paragraphs {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+}
+
+/* Media Screen for above tablet sizes */
+
+@media screen and (min-width:1024px) {
+
+    #life-img {
+        width:500px;
+    }
+
+    #paragraphs {
+        display: unset;
+    }
+    
+    br {
+        display: none;
+    }
+
 }
